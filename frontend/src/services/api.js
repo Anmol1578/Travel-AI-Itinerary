@@ -1,7 +1,11 @@
+
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  // 🚀 DYNAMIC ROUTING CORE:
+  // If Vite detects a production environment variable on Render, it uses it.
+  // Otherwise, it seamlessly falls back to your local port 5000!
+  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api',
 });
 
 // Interceptor to inject JWT token automatically into headers
