@@ -1,6 +1,6 @@
-# 🪐 Orbitra | Full-Stack AI Travel Itinerary Planner
+# 🪐| Full-Stack AI Travel Itinerary Planner
 
-Orbitra is a production-ready, full-stack MERN application that leverages generative AI to construct dynamic, optimized, and tailored travel itineraries. Built with an event-driven architectural mindset, the platform provides robust authentication, low-latency API handshakes, and a responsive glassmorphic design optimized for modern engineering paradigms.
+Ai Travel Itinerary planner is a production-ready, full-stack MERN application that leverages generative AI to construct dynamic, optimized, and tailored travel itineraries. Built with an event-driven architectural mindset, the platform provides robust authentication, low-latency API handshakes, and a responsive glassmorphic design optimized for modern engineering paradigms.
 
 🛰️ **Live Production Client:** [https://travel-ai-itinerary-2.onrender.com](https://travel-ai-itinerary-2.onrender.com)  
 ⚡ **Live API Service:** [travel-ai-itinerary-web.onrender.com/api](https://travel-ai-itinerary-web.onrender.com)
