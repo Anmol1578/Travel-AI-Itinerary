@@ -6,7 +6,7 @@ const {
 } = require("../utils/aiGenerator");
 
 // Define a safe max processing duration (25 seconds) for the external AI APIs
-const AI_TIMEOUT_LIMIT = 25000;
+const AI_TIMEOUT_LIMIT = 35000;
 
 // Helper function to handle timing out slow AI promises
 const raceWithTimeout = (aiPromise, timeoutMs) => {

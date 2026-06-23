@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npm config set legacy-peer-deps true",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +16,7 @@
   "dependencies": {
     "@google/genai": "^2.6.0",
     "@google/generative-ai": "^0.24.1",
+    "axios": "^1.18.1",
     "bcryptjs": "^3.0.3",
     "cloudinary": "^2.10.0",
     "cors": "^2.8.6",
@@ -26,5 +30,10 @@
     "node-cron": "^4.5.0",
     "node-fetch": "^3.3.2",
     "streamifier": "^0.1.1"
+  },
+  "overrides": {
+    "multer-storage-cloudinary": {
+      "cloudinary": "$cloudinary"
+    }
   }
 }
