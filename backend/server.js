@@ -3,7 +3,11 @@ const express = require("express");
 const cors = require("cors");
 const cron = require("node-cron");
 const connectDB = require("./config/db");
+<<<<<<< HEAD
 const authRoutes = require("./routes/authRoutes");
+=======
+const authRoutes = require("./routes/authRoutes"); 
+>>>>>>> d7c9d9e50dbf192550be6362ac27e1473c30c50f
 const itineraryRoutes = require("./routes/itineraryRoutes");
 
 const app = express();
@@ -16,6 +20,7 @@ connectDB();
 const allowedOrigins = [
   "http://localhost:5173", // Vite local port
   "http://localhost:3000", // Create React App local port
+<<<<<<< HEAD
   process.env.FRONTEND_URL, // Will securely hold your live Render frontend link!
 ];
 
@@ -32,6 +37,22 @@ app.use(
     credentials: true,
   }),
 );
+=======
+  process.env.FRONTEND_URL // Will securely hold your live Render frontend link!
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    // Allows server access if origin matches our whitelist or is an internal tool (like Postman)
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Blocked by Orbitra Security Core CORS Policy"));
+    }
+  },
+  credentials: true
+}));
+>>>>>>> d7c9d9e50dbf192550be6362ac27e1473c30c50f
 
 app.use(express.json());
 
