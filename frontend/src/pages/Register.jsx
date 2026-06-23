@@ -10,6 +10,7 @@ const Register = () => {
     password: "",
   });
   const [error, setError] = useState("");
+
   const [submitting, setSubmitting] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
