@@ -1,3 +1,4 @@
+
 const Itinerary = require("../models/Itinerary");
 const {
   analyzeDocumentAndGenerateItinerary,
